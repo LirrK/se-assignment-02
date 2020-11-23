@@ -1,3 +1,5 @@
+package calc;
+
 import java.util.Map;
 
 public class Division extends Binary {
@@ -8,14 +10,18 @@ public class Division extends Binary {
         this.right_ = right;
     }
 
+
     // Member functions
     @Override
     public Integer evaluate(Map<String, Integer> map) { return left_.evaluate(map) / right_.evaluate(map); }
 
     @Override
-    public Integer rank() { return 1; }
+    public Integer rank() { return rank_; }
 
     @Override
-    public String toString() { return left_ + "/ " + right_; }
+    public String toString() { return left_ + "/ ( " + right_ + ")"; }
+
+    // Member variables
+    public int rank_ = 1;
 
 }

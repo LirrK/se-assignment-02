@@ -1,3 +1,5 @@
+package calc;
+
 import java.util.Map;
 
 public class Variable extends Unary {

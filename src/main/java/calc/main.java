@@ -1,3 +1,5 @@
+package calc;
+
 import java.util.Map;
 
 public class main {
@@ -19,12 +21,8 @@ public class main {
         System.out.println(sub); // a / (b - (c + d))
         System.out.println(add); // a / (b + c + d)
 
-        /*
-        Expression mult = new Multiplication(new Division(new Variable("a"), new Variable("b")), new Addition(new Variable("c"), new Subtraction(new Variable("d"), new Variable("e"))));
-        System.out.println(mult);
-        */
-
         System.out.println(e.evaluate(Map.of("a", 3, "b", 8))); // 14
+
     }
 
 }

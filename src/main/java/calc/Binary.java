@@ -1,3 +1,7 @@
+package calc;
+
+import java.util.Map;
+
 public abstract class Binary implements Expression {
 
     // Member variables of the Binary objects
